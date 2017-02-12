@@ -12,6 +12,7 @@
     android:background="@color/white"
     tools:context="baldovin.campuseats.SchoolSelection">
 
+    <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -20,41 +21,103 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-
         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_alignParentTop="true">
+
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100px"
-                app:srcCompat="@android:drawable/ic_delete"
-                android:id="@+id/locationPic"
-                android:layout_weight="0.33" />
+                android:id="@+id/locationLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="TextView"
+                app:srcCompat="@android:drawable/ic_delete"/>
 
-            <TextView
-                android:text="Gracie's"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="20dp"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="100px"
-                android:gravity="center_vertical"
-                android:id="@+id/locationName"
-                android:layout_weight="0.33" />
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="50dp">
 
+                <TextView
+                    android:id="@+id/locationName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25sp"
+                    android:text="Gracie's"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/locationLocation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25sp"
+                    android:text="Grace Watson Hall"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+                </LinearLayout>
             <TextView
-                android:text="CLOSED"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="18dp"
-                android:textAlignment="center"
-                android:layout_width="wrap_content"
-                android:layout_height="100px"
-                android:gravity="center_vertical"
                 android:id="@+id/locationStatus"
-                android:layout_weight="0.33" />
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_gravity="right"
+                android:text="@string/closed"
+                android:gravity="center"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+
+            <ImageView
+                android:id="@+id/locationLogo_2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="TextView"
+                app:srcCompat="@android:drawable/ic_delete"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/locationName_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25sp"
+                    android:text="Crossroads"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/locationLocation_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25sp"
+                    android:text="Global Village"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/locationStatus_2"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_gravity="right"
+                android:text="@string/closed"
+                android:gravity="center"
+                android:textColor="#000000"/>
 
         </LinearLayout>
     </LinearLayout>
