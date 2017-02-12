@@ -34,7 +34,7 @@ def scrape():
 
 def main():
     """
-
+    Takes a filename on the command line to put the output of the script in 
     :return:
     """
     if len(sys.argv) != 2:
