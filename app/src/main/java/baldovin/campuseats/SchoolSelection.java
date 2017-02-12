@@ -1,3 +1,9 @@
+///
+/// file: SchoolSelection.java
+///
+/// author: Christopher Baudouin, Jr.
+///
+
 package baldovin.campuseats;
 
 import android.support.v7.app.AppCompatActivity;
