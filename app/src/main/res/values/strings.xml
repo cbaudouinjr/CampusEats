@@ -2,5 +2,6 @@
 <resources>
     <string name="app_name">CampusEats</string>
     <string name="button_send">Send</string>
+    <string name="closed">CLOSED</string>
     <color name="white">#FFFFFF</color>
 </resources>
